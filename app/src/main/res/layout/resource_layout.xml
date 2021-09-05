@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ResourceIcon"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="3dp"
+        android:contentDescription="@string/res_icon"
+        android:src="@drawable/mythan_ore" />
+
+    <TextView
+        android:id="@+id/tv_resource"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:fontFamily="@font/vp_pixel_font"
+        android:text="@string/resource_name"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

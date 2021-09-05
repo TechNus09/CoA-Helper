@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="@string/apps">
+        <menu>
+            <item
+                android:id="@+id/nav_rankup"
+                android:icon="@drawable/ic_rankup"
+                android:title="@string/rankup_drawer"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/nav_lvlup"
+                android:icon="@drawable/ic_lvlup"
+                android:title="@string/lvlup_drawer"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/nav_guides"
+                android:icon="@drawable/ic_guides"
+                android:title="@string/guides"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/nav_maps"
+                android:icon="@drawable/ic_maps"
+                android:title="@string/maps"
+                android:checkable="true"/>
+        </menu>
+    </item>
+
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_wiki"
+                android:icon="@drawable/ic_wiki"
+                android:title="@string/wiki" />
+            <item
+                android:id="@+id/nav_disc_main"
+                android:icon="@drawable/ic_discord"
+                android:title="@string/coa_main_server"
+                />
+            <item
+                android:id="@+id/nav_disc_tech"
+                android:icon="@drawable/ic_discord"
+                android:title="@string/coa_helper_server" />
+            <item
+                android:id="@+id/nav_github"
+                android:icon="@drawable/ic_github"
+                android:title="@string/my_github"/>
+        </menu>
+
+    </item>
+
+</menu>

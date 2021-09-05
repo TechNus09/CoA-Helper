@@ -1,0 +1,204 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="Typos">
+    <string name="app_name">Helper2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="curse_of_aros_helper">Curse Of Aros Helper</string>
+    <string name="logo">Logo</string>
+    <string name="pegatech9_gmail_com">pegatech9@gmail.com</string>
+    <string name="rankup_drawer">RankUp</string>
+    <string name="lvlup_drawer">LvlUp</string>
+
+    <string name="icon">skill_icon</string>
+    <string name="skill_name">Skill Name</string>
+    <string name="current_lvl">Current LVL</string>
+    <string name="current_perc">Current %</string>
+    <string name="target_perc">Target %</string>
+    <string name="target_lvl">Target LVL</string>
+    <string name="perc0">%</string>
+    <string name="perc">%</string>
+    <string name="boost">Boost</string>
+    <string name="calculate">Calculate</string>
+    <string name="resources_needed">Resources Needed</string>
+    <string name="inventories_needed">Inventories Needed</string>
+
+    <string name="res_icon">resource_icon</string>
+    <string name="resource_name">Resource Name</string>
+
+
+    <string name="ipusername">UserName</string>
+    <string name="btnsearch">Search</string>
+    <string name="ipsearchlimit">Search Limit</string>
+    <string name="username">UserName</string>
+    <string name="search_limit">Search Limit</string>
+
+    <string name="rankup">RankUp</string>
+    <string name="lvlup">LvlUp</string>
+    <string name="help">Help?</string>
+
+    <string name="navigation_draw_open">open navigation drawer</string>
+    <string name="navigation_draw_close">close navigation drawer</string>
+
+
+    <string name="clear">Clear</string>
+    <string name="string_output">Skill :      LVL      |            XP            |      Rank \n
+    Combat : 1-0% | 0 | 0 \n
+    Mining : 1-0% | 0 | 0 \n
+    Smithing : 1-0% | 0 | 0 \n
+    Woodcutting : 1-0% | 0 | 0 \n
+    Crafting : 1-0% | 0 | 0 \n
+    Fishing : 1-0% | 0 | 0 \n
+    Cooking : 1-0% | 0 | 0 </string>
+    <string name="todo">TODO</string>
+    <string name="showing_player_s_data">showing player\'s data</string>
+    <string name="search">search</string>
+    <string name="delete">Delete</string>
+    <string name="view">View</string>
+    <string name="official_website">Official Website</string>
+    <string name="wiki">Wiki</string>
+    <string name="coa_logo">Curse Of Aros Logo</string>
+    <string name="communicate">Communicate</string>
+    <string name="main_coa_server">Main CoA Server</string>
+    <string name="coa_helper_server">CoA Helper Server</string>
+    <string name="my_github">My Github</string>
+    <string name="apps">Apps</string>
+    <string name="coa_main_server">CoA Main Server</string>
+    <string name="guides">Guides</string>
+    <string name="maps">Maps</string>
+    <string name="bright_leaf">Bright Leaf</string>
+    <string name="wintermist">Wintermist</string>
+    <string name="varaxite">Varaxite</string>
+    <string name="string_varaxite">Varaxite</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="brightleaf">BrightLeaf</string>
+    <string name="splash_text">     Let me Do
+                               The Math For You</string>
+    <string name="load">Load</string>
+
+
+    <string name="lvl_1_5">XP: 229</string>
+    <string name="lvl_5_10">XP: 539</string>
+    <string name="lvl_1_10">XP: 768</string>
+    <string name="lvl_10_15">XP: 1,079</string>
+    <string name="lvl_10_20">XP: 3,240</string>
+    <string name="lvl_15_20">XP: 2,161</string>
+    <string name="lvl_20_25">XP: 4,324</string>
+    <string name="lvl_20_30">XP: 12,974</string>
+    <string name="lvl_25_30">XP: 8,650</string>
+    <string name="lvl_30_35">XP: 17,303</string>
+    <string name="lvl_30_40">XP: 51,910</string>
+    <string name="lvl_35_40">XP: 34,607</string>
+    <string name="lvl_40_45">XP: 69,214</string>
+    <string name="lvl_40_50">XP: 207,644</string>
+    <string name="lvl_45_50">XP: 138,430</string>
+    <string name="lvl_45_60">XP: 969,022</string>
+    <string name="lvl_50_55">XP: 276,864</string>
+    <string name="lvl_50_60">XP: 830,592</string>
+    <string name="lvl_55_60">XP: 553,728</string>
+    <string name="lvl_60_65">XP: 1,107,458</string>
+    <string name="lvl_65_70">XP: 2,214,917</string>
+    <string name="lvl_60_70">XP: 3,322,375</string>
+    <string name="lvl_70_75">XP: 4,429,836</string>
+    <string name="lvl_70_80">XP: 13,289,511</string>
+    <string name="lvl_75_80">XP: 8,859,675</string>
+    <string name="lvl_80_85">XP: 17,719,350</string>
+    <string name="lvl_80_90">XP: 53,158,050</string>
+    <string name="lvl_85_90">XP: 35,438,700</string>
+    <string name="lvl_90_95">XP: 70,877,402</string>
+    <string name="lvl_90_100">XP: 212,632,207</string>
+    <string name="lvl_95_100">XP: 141,754,805</string>
+    <string name="lvl_100_110">XP: 850,528,841</string>
+    <string name="lvl_110_120">XP: 3,402,115,380</string>
+
+
+
+    <string name="none">-none-</string>
+    <string name="pine_log">Pine Log</string>
+    <string name="dead_log">Dead Log</string>
+    <string name="birch_log">Birch Log</string>
+    <string name="apple_wood">Applewood</string>
+    <string name="willow_log">Willow Log</string>
+    <string name="oak_log">Oak Log</string>
+    <string name="chestnut_log">Chestnut Log</string>
+    <string name="maple_log">Maple Log</string>
+    <string name="olive_log">Olive Log</string>
+    <string name="palm_wood">Palm Wood</string>
+
+    <string name="accuracy_relic">Accuracy Relic</string>
+    <string name="guarding_relic">Guarding Relic</string>
+    <string name="healing_relic">Healing Relic</string>
+    <string name="wealth_relic">Wealth Relic</string>
+    <string name="power_relic">Power Relic</string>
+    <string name="nature_relic">Nature Relic</string>
+    <string name="fire_relic">Fire Relic</string>
+    <string name="damage_relic">Damage Relic</string>
+    <string name="leeching_relic">Leeching Relic</string>
+    <string name="experience_relic">Experience Relic</string>
+    <string name="cursed_relic">Cursed Relic</string>
+
+    <string name="anchovies">Anchovies</string>
+    <string name="mackerel">Mackerel</string>
+    <string name="squid">Squid</string>
+    <string name="sardine">Sardine</string>
+    <string name="eel">Eel</string>
+    <string name="anglerfish">Anglerfish</string>
+    <string name="trout">Trout</string>
+    <string name="bass">Bass</string>
+    <string name="tuna">Tuna</string>
+    <string name="lobster">Lobster</string>
+    <string name="sea_turtle">Sea Turtle</string>
+    <string name="manta_ray">Manta Ray</string>
+    <string name="shark">Shark</string>
+    <string name="orca">Orca</string>
+    <string name="giant_squid">Giant Squid</string>
+
+    <string name="cooked_anchovies">Cooked Anchovies</string>
+    <string name="cooked_mackerel">Cooked Mackerel</string>
+    <string name="cooked_squid">Cooked Squid</string>
+    <string name="cooked_sardine">Cooked Sardine</string>
+    <string name="cooked_eel">Cooked Eel</string>
+    <string name="cooked_anglerfish">Cooked Anglerfish</string>
+    <string name="cooked_trout">Cooked Trout</string>
+    <string name="cooked_bass">Cooked Bass</string>
+    <string name="cooked_tuna">Cooked Tuna</string>
+    <string name="cooked_lobster">Cooked Lobster</string>
+    <string name="cooked_sea_turtle">Cooked Sea Turtle</string>
+    <string name="cooked_manta_ray">Cooked Manta Ray</string>
+    <string name="cooked_shark">Cooked Shark</string>
+    <string name="cooked_orca">Cooked Orca</string>
+    <string name="cooked_giant_squid">Cooked Giant Squid</string>
+
+    <string name="tin_ore">Tin Ore</string>
+    <string name="iron_ore">Iron Ore</string>
+    <string name="salt">Salt</string>
+    <string name="coal">Coal</string>
+    <string name="silver_ore">Silver Ore</string>
+    <string name="crimsteel_ore">Crimsteel Ore</string>
+    <string name="gold_ore">Gold Ore</string>
+    <string name="pink_salt">Pink Salt</string>
+    <string name="mythan_ore">Mythan Ore</string>
+    <string name="sandstone">Sandstone</string>
+    <string name="cobalt_ore">Cobalt Ore</string>
+    <string name="varaxium">Varaxium</string>
+    <string name="black_salt">Black Salt</string>
+
+    <string name="bronze_bar">Bronze Bar</string>
+    <string name="iron_bar">Iron Bar</string>
+    <string name="steel_bar">Steel Bar</string>
+    <string name="crimsteel_bar">Crimsteel Bar</string>
+    <string name="silver_bar">Silver Bar</string>
+    <string name="gold_bar">Gold Bar</string>
+    <string name="mythan_bar">Mythan Bar</string>
+    <string name="cobalt_bar">Cobalt Bar</string>
+    <string name="varaxite_bar">Varaxite Bar</string>
+
+</resources>
