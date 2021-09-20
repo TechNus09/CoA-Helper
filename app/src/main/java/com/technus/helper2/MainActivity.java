@@ -22,7 +22,7 @@ import com.technus.helper2.ui.guides.GuidesFragment;
 import com.technus.helper2.ui.lvlup.LvlUpFragment;
 import com.technus.helper2.ui.maps.MapsFragment;
 import com.technus.helper2.ui.rankup.RankUpFragment;
-import com.technus.helper2.ui.wiki.WikiFragment;
+import com.technus.helper2.ui.credits.CreditsFragment;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -32,8 +32,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Window w = getWindow();
-        //w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        Window w = getWindow();
+        w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+
 
         
         drawerLayout =findViewById(R.id.drawer_layout);
@@ -77,6 +78,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         else if(id==R.id.nav_guides){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container ,new GuidesFragment()).addToBackStack(null).commit();
+        }
+        else if(id==R.id.nav_credits){
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container ,new CreditsFragment()).addToBackStack(null).commit();
         }
         else if (id == R.id.nav_disc_main) {
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.discord.gg/curseofaros"));

@@ -17,14 +17,13 @@ public class Splash extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(Splash.this,MainActivity.class);
-                startActivity(intent);
-                finish();
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(Splash.this,MainActivity.class);
+            startActivity(intent);
+            finish();
 
-            }
-        },2500);
+        },2000);
+
+
     }
 }

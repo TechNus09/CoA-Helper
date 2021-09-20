@@ -19,22 +19,24 @@ public class MyPagerAdapter extends androidx.viewpager2.adapter.FragmentStateAda
 
         switch (pos){
             case 1 :
-                return new SmithingFragment();
+                return new MiningFragment();
             case 2 :
-                return new WoodcuttingFragment();
+                return new SmithingFragment();
             case 3 :
-                return new CraftingFragment();
+                return new WoodcuttingFragment();
             case 4 :
-                return new FishingFragment();
+                return new CraftingFragment();
             case 5 :
+                return new FishingFragment();
+            case 6 :
                 return new CookingFragment();
 
         }
-        return new MiningFragment();
+        return new AlchemyFragment();
     }
 
     @Override
     public int getItemCount() {
-        return 6;
+        return 7;
     }
 }

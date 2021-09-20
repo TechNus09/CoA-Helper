@@ -32,5 +32,9 @@
         <item name="color">@color/white</item>
     </style>
 
+    <style name="noSpaceSpinner"  parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:padding">0dp</item>
+    </style>
+
 
 </resources>

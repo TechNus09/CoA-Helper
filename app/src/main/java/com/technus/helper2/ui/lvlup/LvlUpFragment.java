@@ -1,5 +1,6 @@
 package com.technus.helper2.ui.lvlup;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -94,11 +95,24 @@ public class LvlUpFragment extends Fragment {
 
 
 
+    int[] mob_boostsImages = {R.drawable.s_noboost,R.drawable.s_boost_5_potion,R.drawable.s_boost_5_relic,R.drawable.s_boost_50
+            ,R.drawable.s_boost_55_potion,R.drawable.s_boost_55_relic,R.drawable.s_boost_60};
+    int[] mining_boostsImages = {R.drawable.s_noboost,R.drawable.s_boost_5_pros,R.drawable.s_boost_50,R.drawable.s_boost_55_pros};
+    int[] smithing_boostsImages = {R.drawable.s_noboost,R.drawable.s_boost_4_ring,R.drawable.s_boost_4_hammer,R.drawable.s_boost_8,R.drawable.s_boost_50
+            ,R.drawable.s_boost_54_ring,R.drawable.s_boost_54_hammer,R.drawable.s_boost_58};
+    int[] woodcutting_boostsImages = {R.drawable.s_noboost,R.drawable.s_boost_50};
+    int[] crafting_boostsImages = {R.drawable.s_noboost,R.drawable.s_boost_50};
+    int[] fishing_boostsImages = {R.drawable.s_noboost,R.drawable.s_boost_50};
+    int[] cooking_boostsImages = {R.drawable.s_noboost,R.drawable.s_boost_50};
 
-    String[] mob_boostsNames = {"NoBoost","+5%","+10%","+50%","+55%","+60%"};
+
+
+
+
+    String[] mob_boostsNames = {"NoBoost","+5%","+5%","+10%","+50%","+55%","+55%","+60%"};
 
     String[] mining_boostsNames = {"NoBoost","+5%","+50%","+55%"};
-    String[] smithing_boostsNames = {"NoBoost","+4%","+8%","+50%","+54%","+58%"};
+    String[] smithing_boostsNames = {"NoBoost","+4%","+4%","+8%","+50%","+54%","+54%","+58%"};
     String[] woodcutting_boostsNames = {"NoBoost","+50%"};
     String[] crafting_boostsNames = {"NoBoost","+50%",};
     String[] fishing_boostsNames = {"NoBoost","+50%"};
@@ -138,6 +152,7 @@ public class LvlUpFragment extends Fragment {
     }
 
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
@@ -157,18 +172,19 @@ public class LvlUpFragment extends Fragment {
         MyAdapter food_adapter = new MyAdapter(getContext(),foodsNames,foodsIcons);
 
         resourceSpinner.setAdapter(log_Adapter);
-        BoostAdapter mob_boost_adapter = new BoostAdapter(getContext(),mob_boostsNames);
-        BoostAdapter mining_boost_adapter = new BoostAdapter(getContext(),mining_boostsNames);
-        BoostAdapter smithing_boost_adapter = new BoostAdapter(getContext(),smithing_boostsNames);
-        BoostAdapter woodcutting_boost_adapter = new BoostAdapter(getContext(),woodcutting_boostsNames);
-        BoostAdapter crafting_boost_adapter = new BoostAdapter(getContext(),crafting_boostsNames);
-        BoostAdapter fishing_boost_adapter = new BoostAdapter(getContext(),fishing_boostsNames);
-        BoostAdapter cooking_boost_adapter = new BoostAdapter(getContext(),cooking_boostsNames);
+        BoostAdapter mob_boost_adapter = new BoostAdapter(getContext(),mob_boostsImages);
+        BoostAdapter mining_boost_adapter = new BoostAdapter(getContext(),mining_boostsImages);
+        BoostAdapter smithing_boost_adapter = new BoostAdapter(getContext(),smithing_boostsImages);
+        BoostAdapter woodcutting_boost_adapter = new BoostAdapter(getContext(),woodcutting_boostsImages);
+        BoostAdapter crafting_boost_adapter = new BoostAdapter(getContext(),crafting_boostsImages);
+        BoostAdapter fishing_boost_adapter = new BoostAdapter(getContext(),fishing_boostsImages);
+        BoostAdapter cooking_boost_adapter = new BoostAdapter(getContext(),cooking_boostsImages);
         boostSpinner.setAdapter(mining_boost_adapter);
 
         Spinner skillsSpinner = view.findViewById(R.id.spinner);
         SkillAdapter skill_Adapter = new SkillAdapter(getContext(),skillsNames,skillsIcons);
         skillsSpinner.setAdapter(skill_Adapter);
+
         skillsSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
@@ -267,10 +283,10 @@ public class LvlUpFragment extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
                 int x = boostSpinner.getSelectedItemPosition();
-                String y = temp_boostsNames[x];
+                String chosen_boost = temp_boostsNames[x];
                 int i;
                 for (i=0;i<boostsNames.length;i++){
-                    if (y.equals(boostsNames[i])){
+                    if (chosen_boost.equals(boostsNames[i])){
                         boost_value=boostsValues[i];
                         break;
                     }
@@ -355,10 +371,31 @@ public class LvlUpFragment extends Fragment {
                 showToast("% must be between 0.0 and 100.0");
             }
 
+            if(currentLvl >=120){
+                currentLvl = 120;
+                currLvl.setText("120");
+            }
+            if(currentPerc >=100){
+                currentPerc = 100;
+                currPerc.setText("100.00");
+            }
+            if(targetLvl >=120){
+                targetLvl = 120;
+                tarLvl.setText("120");
+
+            }
+            if(targetPerc >=100){
+                targetPerc = 100;
+                tarPerc.setText("100.00");
+
+            }
+
+
+
 
             need_xp = Calculate.GetXp(currentLvl,currentPerc,targetLvl,targetPerc);
             long rsc_xp;
-            //double temp00 = Math.floor(resource_xp*boost_value);
+            //math problem, had to add 1 to get correct result for (inf hammer + inf ring)
             if (boost_value == 1.0816){
                 rsc_xp = (long) Math.floor(resource_xp*boost_value) + 1;
             }

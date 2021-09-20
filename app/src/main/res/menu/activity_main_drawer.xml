@@ -49,6 +49,10 @@
                 android:id="@+id/nav_github"
                 android:icon="@drawable/ic_github"
                 android:title="@string/my_github"/>
+            <item
+                android:id="@+id/nav_credits"
+                android:icon="@drawable/ic_credits"
+                android:title="@string/credits"/>
         </menu>
 
     </item>

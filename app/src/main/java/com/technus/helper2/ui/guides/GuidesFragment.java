@@ -35,7 +35,7 @@ public class GuidesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.guides_fragment, container, false);
+        View view = inflater.inflate(R.layout.fragment_guides, container, false);
 
         tabLayout = view.findViewById(R.id.tabLayout);
         pager2 = view.findViewById(R.id.guides_container);
@@ -44,6 +44,7 @@ public class GuidesFragment extends Fragment {
         adapter = new MyPagerAdapter(fm,getLifecycle());
         pager2.setAdapter(adapter);
 
+        tabLayout.addTab(tabLayout.newTab().setText("Alchemy"));
         tabLayout.addTab(tabLayout.newTab().setText("Mining"));
         tabLayout.addTab(tabLayout.newTab().setText("Smithing"));
         tabLayout.addTab(tabLayout.newTab().setText("Woodcutting"));

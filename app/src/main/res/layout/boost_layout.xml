@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3C342C">
 
 
-    <TextView
-        android:id="@+id/tv_boost"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <ImageView
+        android:id="@+id/img_boost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginStart="0dp"
-        android:gravity="center"
-        android:text="@string/boost"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:fontFamily="@font/vp_pixel_font"
-        android:textColor="@color/black"/>
+        android:src="@drawable/s_boost_58" />
 
 </LinearLayout>

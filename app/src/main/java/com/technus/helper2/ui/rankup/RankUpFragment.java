@@ -54,6 +54,13 @@ public class RankUpFragment extends Fragment {
             "     **Check if the website is working.\n"+
             "     **Check for new updates on github.com/TechNus09/RankUp/releases/.\n"+
             "Note:The website Leaderboard update itself every few minutes (around 5mn) so its data will have 5mn delay than the in-game data.";
+    String helpTxt1 = "* Username : Enter your Username correctly.\n" +
+            "* Limit : Enter your lowest rank (If you don't know it, enter a big number like 50000, delete and increase it until u get your full data).\n" +
+            "* View : View the recent stored Data of the given Username.\n" +
+            "* Delete : Delete the stored data of the given Username (In case some skills weren't updated).\n" +
+            "* The lowest your levels the longer the search will be.\n" +
+            "* The first search will be so slow, but afterward it will become way faster.\n" +
+            "* If the CoA website is down, the results might be incorrect.\n" ;
 
 
 
@@ -291,7 +298,7 @@ public class RankUpFragment extends Fragment {
     private void CreateAlertDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
         builder.setTitle("how to use me");
-        builder.setMessage(helpTxt);
+        builder.setMessage(helpTxt1);
         builder.show();
     }
 

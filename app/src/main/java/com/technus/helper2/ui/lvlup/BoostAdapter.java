@@ -5,23 +5,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 import com.technus.helper2.R;
 
 public class BoostAdapter extends BaseAdapter {
 
     Context context;
-    String[] boostNames;
+    int[] boostImages;
 
-    public BoostAdapter(Context context, String[] boostNames) {
+    public BoostAdapter(Context context, int[] boostImages) {
         this.context = context;
-        this.boostNames = boostNames;
+        this.boostImages = boostImages;
     }
 
     @Override
     public int getCount() {
-        return boostNames.length;
+        return boostImages.length;
     }
 
     @Override
@@ -38,9 +38,9 @@ public class BoostAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
 
         view = LayoutInflater.from(context).inflate(R.layout.boost_layout,viewGroup,false);
-        TextView textView = view.findViewById(R.id.tv_boost);
+        ImageView imageView = view.findViewById(R.id.img_boost);
 
-        textView.setText(boostNames[i]);
+        imageView.setImageResource(boostImages[i]);
 
         return view;
     }
