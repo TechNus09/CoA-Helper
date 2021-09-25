@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="Typos">
-    <string name="app_name">Helper2</string>
+    <string name="app_name">CoA Helper</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -145,20 +145,25 @@
     <string name="cursed_relic">Cursed Relic</string>
 
     <string name="anchovies">Anchovies</string>
+    <string name="anchovies_goldfish">Anchovies \n Goldfish</string>
     <string name="mackerel">Mackerel</string>
     <string name="squid">Squid</string>
     <string name="sardine">Sardine</string>
     <string name="eel">Eel</string>
     <string name="anglerfish">Anglerfish</string>
     <string name="trout">Trout</string>
+    <string name="trout_jelly">Trout \n Jellyfish</string>
     <string name="bass">Bass</string>
+    <string name="bass_bones">Bass \n Herringbone</string>
     <string name="tuna">Tuna</string>
     <string name="lobster">Lobster</string>
-    <string name="sea_turtle">Sea Turtle</string>
+    <string name="lobster_sea_turtle">Lobster \n Sea Turtle</string>
     <string name="manta_ray">Manta Ray</string>
     <string name="shark">Shark</string>
+    <string name="shark_orca">Shark/Orca</string>
     <string name="orca">Orca</string>
     <string name="giant_squid">Giant Squid</string>
+    <string name="shark_orca_giant_squid">Shark/Orca \n Giant Squid</string>
 
     <string name="cooked_anchovies">Cooked Anchovies</string>
     <string name="cooked_mackerel">Cooked Mackerel</string>
@@ -203,8 +208,9 @@
     <string name="credits">Credits</string>
 
 
-    <string name="skill_calculator">    The guides was made with the help of \'DarkSecret\'s guides and \'Chen\'s webapp <a href="https://coa-calculator.herokuapp.com/">Skill Calculator</a></string>
-    <string name="github_credits">    Discord : TechNus09#0508 \n    Github :  <a href="https://github.com/TechNus09">https://github.com/TechNus09</a></string>
+    <string name="skill_calculator">\u0020\u0020\u0020\u0020 The guides were made with the help of \'DarkSecret\'s guides and \'Chen\'s webapp <a href="https://coa-calculator.herokuapp.com/">Skill Calculator</a></string>
+    <string name="contact_me">\u0020\u0020\u0020\u0020 Suggestions? Wanna contribute? you don\'t want your work used here, hit me up on : \n<a href="https://discordapp.com/users/465858376182530059/">Discord</a> Or <a href="https://github.com/TechNus09">Github</a></string>
+
     <string name="noboost">NoBoost</string>
     <string name="no_boost">No Boost</string>
 

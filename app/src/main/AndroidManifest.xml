@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.technus.helper2">
+    package="com.technus.coahelper">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,15 +10,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Helper2">
-        <activity android:name=".MainActivity"
+        android:theme="@style/Theme.CoAHelper">
+        <activity android:name="com.technus.coahelper.MainActivity"
             android:hardwareAccelerated="true"
-            android:theme="@style/Theme.Helper2.NoActionBar">
+            android:theme="@style/Theme.CoAHelper.NoActionBar">
         </activity>
         <activity
-            android:name=".Splash"
+            android:name="com.technus.coahelper.Splash"
             android:hardwareAccelerated="true"
-            android:theme="@style/Theme.Helper2.NoActionBar">
+            android:theme="@style/Theme.CoAHelper.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
